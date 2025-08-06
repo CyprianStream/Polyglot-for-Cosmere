@@ -1,0 +1,15 @@
+{
+  "id": "cosmere-polyglot",
+  "title": "Polyglot for Cosmere",
+  "description": "A Module to add support for Polyglot to the CosmereRPG system",
+  "authors": [
+    {
+    "name": "Cyprian"
+    }
+  ],
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  }
+}
