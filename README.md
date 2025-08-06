@@ -1,5 +1,4 @@
 # Polyglot for Cosmere
----
 This is a simple module to add Cosmere languages to the Polyglot extension!
 
 It currently adds the following languages:
@@ -16,8 +15,7 @@ Thaylen
 Unkalaki
 Veden
 
-### Need help?
----
+## Need help?
 Open an issue and I'll get to it when I can, unfortunately since this is a side project progress may be slow
 
 ##### Suport the project:
