@@ -31,6 +31,10 @@ Hooks.once("polyglot.init", (LanguageProvider) => {
                 label: "Listener",
                 font: "",
             },
+            Natan:{
+                label: "Natan",
+                font: "",
+            },
             Shin: {
                 label: "Shin",
                 font: "",
@@ -49,30 +53,16 @@ Hooks.once("polyglot.init", (LanguageProvider) => {
             }
         }
 
-        async getLanguages() {
-		const langs = {};
-		if (this.replaceLanguages) {
-			CONFIG.FICTIONAL.spoken = {};
-		}
-		const languagesSetting = game.settings.get("polyglot", "Languages");
-		for (let lang in CONFIG.FICTIONAL.spoken) {
-			langs[lang] = {
-				label: CONFIG.FICTIONAL.spoken[lang],
-				font: languagesSetting[lang]?.font || this.languages[lang]?.font || this.defaultFont,
-				rng: languagesSetting[lang]?.rng ?? "default",
-			};
-		}
-		this.languages = langs;
-	}
-
         getUserLanguages(actor) {
             let known_languages = new Set();
             let literate_languages = new Set();
+            console.log("POLYGLOT Grabbing user languages...")
             for (let lang of actor.system.expertises) {
-                languageKey = Object.values(this.languages).find(item => typeof item.label === "lang" && lang.includes(item.label))
-                if (languageKey){
-                    known_languages.add(languageKey)
-                    literate_languages.add(languageKey)
+                console.log(lang)
+                if (this.languages[lang.label].label === lang.label){
+                    known_languages.add(lang.label)
+                    literate_languages.add(lang.label)
+                    console.log(lang.label)
                 };
                 return [known_languages, literate_languages];
             }
