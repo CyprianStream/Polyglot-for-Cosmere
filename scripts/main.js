@@ -59,7 +59,7 @@ Hooks.once("polyglot.init", (LanguageProvider) => {
             console.log("POLYGLOT Grabbing user languages...")
             for (let lang of actor.system.expertises) {
                 console.log(lang)
-                if (this.languages[lang.label].label === lang.label){
+                if (this.languages[lang.label.toString()].label === lang.label.toString()){
                     known_languages.add(lang.label)
                     literate_languages.add(lang.label)
                     console.log(lang.label)
