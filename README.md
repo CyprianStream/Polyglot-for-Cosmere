@@ -4,15 +4,27 @@ This is a simple module to add Cosmere languages to the Polyglot extension!
 It currently adds the following languages:
 
 Alethi
+
 Azish
+
 Dawnchant
+
 Herdazian
+
 Iriali
+
 Kharbranthian
+
 Listener
+
+Natan
+
 Shin
+
 Thaylen
+
 Unkalaki
+
 Veden
 
 ## Need help?
