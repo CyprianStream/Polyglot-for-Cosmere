@@ -1,5 +1,5 @@
 # Polyglot for Cosmere
-This is a simple module to add Cosmere languages to the Polyglot extension!
+This is a simple module to add Cosmere languages to the Polyglot extension! This module will automatically add reading and writing for each culture characters have an expertise in that have a related language.
 
 It currently adds the following languages:
 
