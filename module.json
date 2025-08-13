@@ -2,21 +2,35 @@
   "id": "cosmere-polyglot",
   "title": "Polyglot for Cosmere",
   "description": "A Module to add support for Polyglot to the CosmereRPG system",
+  "version": "0.1.2",
   "authors": [
     {
     "name": "Cyprian"
     }
   ],
-  "version": "0.1.2",
-  "manifest": "https://github.com/CyprianStream/Polyglot-for-Cosmere/releases/latest/download/module.json",
+  "manifest": "https://github.com/CyprianStream/Polyglot-for-Cosmere/releases/download/v0.1.2/module.json",
   "download": "https://github.com/CyprianStream/Polyglot-for-Cosmere/releases/download/0.1.2/cosmere-polyglot.zip",
-  "url": "https://github.com/CyprianStream/Polyglot-for-Cosmere",
   "compatibility": {
     "minimum": "12",
-    "verified": "12" 
+    "verified": "12"
   },
-  "scripts": [
-    "scripts/main.js",
-    "scripts/fonts.js"
-  ]
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "polyglot",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "cosmere-rpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
 }
